@@ -1,44 +1,77 @@
 # Portfólio | Ana Carolina Morais dos Reis Nunes
 
-Este repositório contém uma página web profissional, responsiva e estática para apresentar projetos de tecnologia de Ana Carolina Morais dos Reis Nunes.
+Página web profissional, responsiva e estática para apresentar projetos de tecnologia desenvolvidos por Ana Carolina Morais dos Reis Nunes.
 
-O objetivo do portfólio é reunir, em uma página única, informações sobre formação, atuação profissional, tecnologias utilizadas, projetos desenvolvidos e canais de contato. A página foi criada com HTML, CSS e JavaScript, sem frameworks pesados.
+## Objetivo
+
+O objetivo do site é reunir, em uma página única, informações profissionais, projetos publicados, tecnologias utilizadas, estatísticas do portfólio e canais de contato. A proposta é apresentar soluções web de forma clara para pessoas técnicas e não técnicas.
+
+## Tecnologias utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+- Firebase
+- Supabase
+- PostgreSQL
+- PWA
+- SQL
 
 ## Estrutura
 
 - `index.html`: conteúdo principal da página.
-- `style.css`: estilos visuais e responsividade.
-- `script.js`: menu mobile, ano automático e links fáceis de editar.
+- `style.css`: identidade visual, cards, responsividade e placeholders.
+- `script.js`: links editáveis, menu mobile, estatísticas e ano automático.
+- `assets/favicon.svg`: favicon do site.
+- `assets/images/`: pasta preparada para capturas de tela dos projetos.
 
-## Como editar links
+## Como atualizar projetos e links
 
-Os links dos projetos e contatos ficam no início do arquivo `script.js`, dentro do objeto `editableLinks`.
-
-Substitua os valores `#`, e-mail e telefone pelos links reais:
+Os links ficam no início do arquivo `script.js`, dentro do objeto `editableLinks`.
 
 ```js
 const editableLinks = {
-  "alion-demo": "#",
-  "alion-code": "#",
+  "alion-demo": "https://ananunes1807-cell.github.io/app-treino-supabase/",
+  "alion-code": "https://github.com/ananunes1807-cell/app-treino-supabase",
   linkedin: "#",
   email: "mailto:seu-email@exemplo.com",
   whatsapp: "https://wa.me/5500000000000"
 };
 ```
 
-## Como acessar pelo GitHub Pages
+Para ativar o LinkedIn futuramente, substitua `#` pelo link real e altere o bloco de contato no `index.html` de botão desabilitado para link.
 
-1. Envie os arquivos para o repositório no GitHub.
-2. Acesse o repositório `ananunes1807-cell/ana-nunes-portfolio`.
-3. Clique em **Settings**.
-4. No menu lateral, clique em **Pages**.
-5. Em **Build and deployment**, selecione:
+As estatísticas ficam no `script.js`. Projetos publicados e tecnologias são contados automaticamente pela página. O número de repositórios públicos pode ser atualizado em:
+
+```js
+const editableStats = {
+  publicRepos: 3
+};
+```
+
+## Como adicionar capturas de tela
+
+Salve as imagens na pasta `assets/images` com estes nomes:
+
+- `alion-treinos.png`
+- `sistema-chamados.png`
+- `central-demandas.png`
+
+Enquanto as imagens não existirem, a página mostra um placeholder visual elegante.
+
+## Como publicar no GitHub Pages
+
+1. Envie os arquivos para o repositório `ananunes1807-cell/ana-nunes-portfolio`.
+2. No GitHub, acesse **Settings**.
+3. Clique em **Pages**.
+4. Em **Build and deployment**, selecione:
    - Source: **Deploy from a branch**
    - Branch: **main**
    - Folder: **/root**
-6. Clique em **Save**.
+5. Clique em **Save**.
 
-Após alguns minutos, o site ficará disponível em:
+Após a publicação, o site ficará disponível em:
 
 ```text
 https://ananunes1807-cell.github.io/ana-nunes-portfolio/
