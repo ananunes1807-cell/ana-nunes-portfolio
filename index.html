@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Ana Carolina Morais dos Reis Nunes, desenvolvedora de projetos web e profissional de TI.">
+  <title>Ana Carolina Morais dos Reis Nunes | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">Ana Carolina Morais dos Reis Nunes</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links" data-nav-links>
+        <a href="#sobre">Sobre mim</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#tecnologias">Tecnologias</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero section">
+      <div class="hero-content">
+        <p class="eyebrow">Portfólio de Tecnologia</p>
+        <h1>Ana Carolina Morais dos Reis Nunes</h1>
+        <p class="subtitle">Auxiliar Operacional com atuação em TI | Desenvolvedora de projetos web | ADS</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-secondary" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="hero-panel" aria-label="Resumo profissional">
+        <div class="panel-row">
+          <span>Formação</span>
+          <strong>ADS</strong>
+        </div>
+        <div class="panel-row">
+          <span>Foco</span>
+          <strong>Soluções web</strong>
+        </div>
+        <div class="panel-row">
+          <span>Atuação</span>
+          <strong>Suporte e demandas</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="section-heading">
+        <p class="eyebrow">Sobre mim</p>
+        <h2>Profissional de TI com visão prática para resolver problemas reais.</h2>
+      </div>
+      <p>
+        Sou formada em Análise e Desenvolvimento de Sistemas e atuo com suporte, organização de demandas,
+        infraestrutura básica e desenvolvimento de soluções web para problemas reais. Tenho interesse em criar
+        ferramentas simples, úteis e bem estruturadas, aproximando tecnologia das necessidades do dia a dia.
+      </p>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="section-heading">
+        <p class="eyebrow">Projetos</p>
+        <h2>Soluções desenvolvidas para organização, acompanhamento e produtividade.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="card-top">
+            <span class="project-number">01</span>
+            <h3>Alion Treinos</h3>
+          </div>
+          <p>Sistema web para personal trainers acompanharem alunos, treinos, cargas, evolução e histórico.</p>
+          <div class="tech-list" aria-label="Tecnologias do projeto Alion Treinos">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Supabase</span>
+            <span>PostgreSQL</span>
+            <span>PWA</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary" data-link="alion-demo" href="#">Ver projeto</a>
+            <a class="btn btn-ghost" data-link="alion-code" href="#">Ver código</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-top">
+            <span class="project-number">02</span>
+            <h3>Sistema de Chamados</h3>
+          </div>
+          <p>Sistema web para registrar, organizar e acompanhar chamados e solicitações de TI.</p>
+          <div class="tech-list" aria-label="Tecnologias do projeto Sistema de Chamados">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Firebase</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary" data-link="chamados-demo" href="#">Ver projeto</a>
+            <a class="btn btn-ghost" data-link="chamados-code" href="#">Ver código</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-top">
+            <span class="project-number">03</span>
+            <h3>Central de Demandas</h3>
+          </div>
+          <p>Aplicação web para organizar tarefas, demandas do dia e acompanhamento de atividades pessoais e profissionais.</p>
+          <div class="tech-list" aria-label="Tecnologias do projeto Central de Demandas">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Firebase</span>
+          </div>
+          <div class="card-actions">
+            <a class="btn btn-primary" data-link="demandas-demo" href="#">Ver projeto</a>
+            <a class="btn btn-ghost" data-link="demandas-code" href="#">Ver código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section technologies" id="tecnologias">
+      <div class="section-heading">
+        <p class="eyebrow">Tecnologias</p>
+        <h2>Ferramentas e tecnologias presentes nos meus projetos.</h2>
+      </div>
+      <div class="skills" aria-label="Lista de tecnologias">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>GitHub</span>
+        <span>Firebase</span>
+        <span>Supabase</span>
+        <span>PostgreSQL</span>
+        <span>PWA</span>
+        <span>SQL</span>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="section-heading">
+        <p class="eyebrow">Contato</p>
+        <h2>Vamos conversar sobre tecnologia, suporte e projetos web.</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-link" data-link="github" href="https://github.com/ananunes1807-cell" target="_blank" rel="noreferrer">
+          <span>GitHub</span>
+          <strong>Ver repositórios</strong>
+        </a>
+        <a class="contact-link" data-link="linkedin" href="#" target="_blank" rel="noreferrer">
+          <span>LinkedIn</span>
+          <strong>Conectar</strong>
+        </a>
+        <a class="contact-link" data-link="email" href="mailto:seu-email@exemplo.com">
+          <span>E-mail</span>
+          <strong>Enviar mensagem</strong>
+        </a>
+        <a class="contact-link" data-link="whatsapp" href="#" target="_blank" rel="noreferrer">
+          <span>WhatsApp</span>
+          <strong>Chamar agora</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span data-current-year></span> Ana Carolina Morais dos Reis Nunes. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
