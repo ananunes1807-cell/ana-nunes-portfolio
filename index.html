@@ -9,6 +9,10 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ananunes1807-cell.github.io/ana-nunes-portfolio/">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://ananunes1807-cell.github.io/ana-nunes-portfolio/assets/og-portfolio.png">
+  <meta property="og:image:alt" content="Ana Carolina Nunes — Desenvolvimento web, automação e dados">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#083f46">
   <title>Ana Carolina Nunes | Desenvolvimento Web e Automação</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +34,7 @@
         <a href="#projetos">Projetos</a>
         <a href="#experiencia">Experiência</a>
         <a href="#tecnologias">Tecnologias</a>
-        <a href="#contato">Contato</a>
+        <a class="nav-cta" href="#contato">Contato</a>
       </div>
     </nav>
   </header>
@@ -38,28 +42,38 @@
   <main id="inicio">
     <section class="hero section">
       <div class="hero-content">
+        <p class="availability"><span></span> Disponível para novas oportunidades</p>
         <p class="eyebrow">Desenvolvimento web • Automação • Dados</p>
         <h1>Transformo necessidades reais em <span>soluções digitais.</span></h1>
         <p class="subtitle">Olá, sou Ana Carolina Nunes. Formada em Análise e Desenvolvimento de Sistemas, desenvolvo aplicações web para simplificar rotinas, organizar informações e resolver problemas do dia a dia.</p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-primary" href="#projetos">Ver projetos <span aria-hidden="true">↓</span></a>
           <a class="btn btn-secondary" href="mailto:ananunes1807@gmail.com">Falar comigo</a>
         </div>
-      </div>
-      <div class="hero-panel" aria-label="Resumo profissional">
-        <div class="panel-row">
-          <span>Formação</span>
-          <strong>Análise e Desenvolvimento de Sistemas</strong>
-        </div>
-        <div class="panel-row">
-          <span>Especialidades</span>
-          <strong>Web, automação e dados</strong>
-        </div>
-        <div class="panel-row">
-          <span>Disponibilidade</span>
-          <strong>Novas oportunidades</strong>
+        <div class="hero-proof" aria-label="Resumo de experiência">
+          <span><strong>10</strong> repositórios públicos</span>
+          <span><strong>3</strong> projetos em destaque</span>
+          <span><strong>ADS</strong> formação superior</span>
         </div>
       </div>
+      <aside class="profile-card" aria-label="Apresentação de Ana Carolina Nunes">
+        <div class="profile-photo">
+          <img src="assets/profile.jpg" alt="Foto profissional de Ana Carolina Nunes" data-profile-image>
+          <div class="profile-fallback" data-profile-fallback aria-hidden="true">
+            <span>AN</span>
+          </div>
+        </div>
+        <div class="profile-info">
+          <p class="profile-kicker">Tecnologia aplicada a problemas reais</p>
+          <h2>Ana Carolina Nunes</h2>
+          <p>Desenvolvedora de soluções web</p>
+          <div class="profile-tags">
+            <span>JavaScript</span>
+            <span>SQL</span>
+            <span>Supabase</span>
+          </div>
+        </div>
+      </aside>
     </section>
 
     <section class="section about" id="sobre">
@@ -86,36 +100,47 @@
       </div>
 
       <div class="project-grid">
-        <article class="project-card">
+        <article class="project-card is-featured">
           <figure class="project-media media-alion" aria-label="Representação visual do painel Alion Treinos">
             <div class="project-preview">
-              <span class="preview-label">Alion Treinos</span>
-              <strong>Gestão de alunos e treinos</strong>
-              <span class="preview-line"></span>
-              <span class="preview-line is-short"></span>
+              <div class="preview-window"><span></span><span></span><span></span></div>
+              <div class="preview-dashboard">
+                <div class="preview-sidebar">
+                  <strong>ALION</strong>
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="preview-main">
+                  <span class="preview-label">Visão geral</span>
+                  <strong>Gestão de alunos e treinos</strong>
+                  <div class="preview-metrics"><span></span><span></span><span></span></div>
+                  <span class="preview-line"></span>
+                  <span class="preview-line is-short"></span>
+                </div>
+              </div>
             </div>
           </figure>
-          <div class="card-top">
-            <span class="project-number">01</span>
-            <h3>Alion Treinos</h3>
-          </div>
-          <p>Plataforma para personal trainers gerenciarem alunos, treinos, avaliações físicas e evolução corporal em um só lugar.</p>
-          <ul class="project-highlights">
-            <li>Perfis e permissões para administrador, personal e aluno</li>
-            <li>Autenticação e segurança de dados com Supabase</li>
-            <li>Histórico de treinos, avaliações e medidas corporais</li>
-          </ul>
-          <div class="tech-list" aria-label="Tecnologias do projeto Alion Treinos">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>Supabase</span>
-            <span>PostgreSQL</span>
-            <span>PWA</span>
-          </div>
-          <div class="card-actions">
-            <a class="btn btn-primary" data-link="alion-demo" href="#">Ver Projeto</a>
-            <a class="btn btn-ghost" data-link="alion-code" href="#">Ver Código</a>
+          <div class="project-content">
+            <span class="featured-badge">Projeto principal</span>
+            <div class="card-top">
+              <span class="project-number">01</span>
+              <h3>Alion Treinos</h3>
+            </div>
+            <p>Plataforma para personal trainers gerenciarem alunos, treinos, avaliações físicas e evolução corporal em um só lugar.</p>
+            <ul class="project-highlights">
+              <li>Perfis e permissões para administrador, personal e aluno</li>
+              <li>Autenticação e segurança de dados com Supabase</li>
+              <li>Histórico de treinos, avaliações e medidas corporais</li>
+            </ul>
+            <div class="tech-list" aria-label="Tecnologias do projeto Alion Treinos">
+              <span>JavaScript</span>
+              <span>Supabase</span>
+              <span>PostgreSQL</span>
+              <span>PWA</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-primary" data-link="alion-demo" href="#">Ver projeto <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-ghost" data-link="alion-code" href="#">Ver código</a>
+            </div>
           </div>
         </article>
 
@@ -145,8 +170,8 @@
             <span>Firebase</span>
           </div>
           <div class="card-actions">
-            <a class="btn btn-primary" data-link="chamados-demo" href="#">Ver Projeto</a>
-            <a class="btn btn-ghost" data-link="chamados-code" href="#">Ver Código</a>
+            <a class="btn btn-primary" data-link="chamados-demo" href="#">Ver projeto <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" data-link="chamados-code" href="#">Ver GitHub</a>
           </div>
         </article>
 
@@ -176,8 +201,8 @@
             <span>Firebase</span>
           </div>
           <div class="card-actions">
-            <a class="btn btn-primary" data-link="demandas-demo" href="#">Ver Projeto</a>
-            <a class="btn btn-ghost" data-link="demandas-code" href="#">Ver Código</a>
+            <a class="btn btn-primary" data-link="demandas-demo" href="#">Ver projeto <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" data-link="demandas-code" href="#">Ver código</a>
           </div>
         </article>
       </div>
@@ -201,15 +226,14 @@
         <h2>Ferramentas e tecnologias presentes nos meus projetos.</h2>
       </div>
       <div class="skills" aria-label="Lista de tecnologias">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>GitHub</span>
-        <span>Firebase</span>
-        <span>Supabase</span>
-        <span>PostgreSQL</span>
-        <span>PWA</span>
-        <span>SQL</span>
+        <span><strong>JS</strong> JavaScript</span>
+        <span><strong>DB</strong> PostgreSQL</span>
+        <span><strong>SQL</strong> Banco de dados</span>
+        <span><strong>SB</strong> Supabase</span>
+        <span><strong>FB</strong> Firebase</span>
+        <span><strong>PWA</strong> Aplicações offline</span>
+        <span><strong>GH</strong> GitHub</span>
+        <span><strong>UI</strong> HTML &amp; CSS</span>
       </div>
     </section>
 
@@ -219,6 +243,11 @@
         <h2>Tem uma oportunidade ou projeto em que eu possa contribuir?</h2>
       </div>
       <p class="contact-intro">Estou aberta a oportunidades em desenvolvimento web, automação e dados. Entre em contato pelo canal que preferir.</p>
+      <a class="contact-email" href="mailto:ananunes1807@gmail.com">
+        <span>Escreva para</span>
+        <strong>ananunes1807@gmail.com</strong>
+        <span aria-hidden="true">↗</span>
+      </a>
       <div class="contact-grid">
         <a class="contact-link" data-link="github" href="https://github.com/ananunes1807-cell" target="_blank" rel="noreferrer">
           <span>GitHub</span>
@@ -227,10 +256,6 @@
         <a class="contact-link" data-link="linkedin" href="https://www.linkedin.com/in/anacarolina-infra-ti/" target="_blank" rel="noreferrer">
           <span>LinkedIn</span>
           <strong>Ver perfil profissional</strong>
-        </a>
-        <a class="contact-link" data-link="email" href="mailto:ananunes1807@gmail.com">
-          <span>E-mail</span>
-          <strong>ananunes1807@gmail.com</strong>
         </a>
         <a class="contact-link" data-link="whatsapp" href="#" target="_blank" rel="noreferrer">
           <span>WhatsApp</span>
@@ -241,7 +266,8 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; <span data-current-year></span> Ana Carolina Morais dos Reis Nunes. Todos os direitos reservados.</p>
+    <p>&copy; <span data-current-year></span> Ana Carolina Nunes.</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
   </footer>
 
   <script src="script.js"></script>

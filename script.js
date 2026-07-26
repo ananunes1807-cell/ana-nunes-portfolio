@@ -44,6 +44,30 @@ document.querySelectorAll("[data-project-image]").forEach((image) => {
   });
 });
 
+const profileImage = document.querySelector("[data-profile-image]");
+const profileFallback = document.querySelector("[data-profile-fallback]");
+
+const showProfileImage = () => {
+  profileImage.classList.add("is-loaded");
+  profileFallback.hidden = true;
+};
+
+const showProfileFallback = () => {
+  profileImage.hidden = true;
+  profileFallback.hidden = false;
+};
+
+profileImage.addEventListener("load", showProfileImage);
+profileImage.addEventListener("error", showProfileFallback);
+
+if (profileImage.complete) {
+  if (profileImage.naturalWidth > 0) {
+    showProfileImage();
+  } else {
+    showProfileFallback();
+  }
+}
+
 const stats = {
   publishedProjects: document.querySelectorAll(".project-card").length,
   technologies: document.querySelectorAll(".skills span").length,
@@ -70,3 +94,20 @@ navLinks.querySelectorAll("a").forEach((link) => {
 });
 
 document.querySelector("[data-current-year]").textContent = new Date().getFullYear();
+
+const revealItems = document.querySelectorAll(".section:not(.hero), .project-card");
+
+if ("IntersectionObserver" in window && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  revealItems.forEach((item) => item.classList.add("reveal"));
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealItems.forEach((item) => revealObserver.observe(item));
+}
