@@ -6,13 +6,13 @@ const editableLinks = {
   "demandas-demo": "https://central-demandas-pessoal.web.app/",
   "demandas-code": "https://github.com/ananunes1807-cell/central-demandas-pessoal",
   github: "https://github.com/ananunes1807-cell",
-  linkedin: "#",
-  email: "mailto:seu-email@exemplo.com",
-  whatsapp: "https://wa.me/5500000000000"
+  linkedin: "https://www.linkedin.com/in/anacarolina-infra-ti/",
+  email: "mailto:ananunes1807@gmail.com",
+  whatsapp: "https://wa.me/5594991022115?text=Ol%C3%A1%2C%20Ana!%20Encontrei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20uma%20oportunidade."
 };
 
 const editableStats = {
-  publicRepos: 3
+  publicRepos: 10
 };
 
 document.querySelectorAll("[data-link]").forEach((link) => {

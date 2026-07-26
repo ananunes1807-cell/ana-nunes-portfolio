@@ -40,7 +40,7 @@ const editableLinks = {
 };
 ```
 
-Para ativar o LinkedIn futuramente, substitua `#` pelo link real e altere o bloco de contato no `index.html` de botão desabilitado para link.
+O LinkedIn profissional está configurado como `https://www.linkedin.com/in/anacarolina-infra-ti/`.
 
 As estatísticas ficam no `script.js`. Projetos publicados e tecnologias são contados automaticamente pela página. O número de repositórios públicos pode ser atualizado em:
 

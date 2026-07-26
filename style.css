@@ -65,6 +65,11 @@ a {
   line-height: 1.15;
 }
 
+.brand-dot,
+.hero h1 span {
+  color: var(--primary);
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -288,44 +293,66 @@ h3 {
     var(--surface-strong);
 }
 
-.project-media::before {
-  content: "";
-  width: 62px;
-  height: 62px;
-  border: 2px solid rgba(13, 124, 134, 0.25);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.project-media img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.project-media img.is-missing {
-  display: none;
-}
-
-.project-media figcaption {
-  position: absolute;
-  bottom: 14px;
-  left: 14px;
-  right: 14px;
-  padding: 8px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.65);
+.project-preview {
+  width: calc(100% - 38px);
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 16px 32px rgba(25, 37, 52, 0.12);
+}
+
+.project-preview strong,
+.project-preview span {
+  display: block;
+}
+
+.preview-label {
+  margin-bottom: 7px;
   color: var(--primary-dark);
-  background: rgba(255, 255, 255, 0.78);
-  font-size: 0.86rem;
+  font-size: 0.72rem;
   font-weight: 800;
-  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-preview strong {
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.preview-line {
+  width: 100%;
+  height: 7px;
+  margin-top: 8px;
+  border-radius: 99px;
+  background: rgba(13, 124, 134, 0.18);
+}
+
+.preview-line.is-short {
+  width: 62%;
+}
+
+.media-chamados {
+  background: linear-gradient(135deg, rgba(181, 107, 50, 0.18), rgba(255, 240, 229, 0.94));
+}
+
+.media-demandas {
+  background: linear-gradient(135deg, rgba(9, 94, 102, 0.2), rgba(238, 244, 248, 0.95));
 }
 
 .project-card p {
   color: var(--muted);
+}
+
+.project-highlights {
+  margin: 0 0 22px;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.project-highlights li {
+  margin-bottom: 7px;
 }
 
 .card-top {
@@ -379,6 +406,13 @@ h3 {
   margin-bottom: 0;
   color: var(--muted);
   font-size: 1.08rem;
+}
+
+.contact-intro {
+  max-width: 720px;
+  margin: -16px 0 30px;
+  color: var(--muted);
+  font-size: 1.06rem;
 }
 
 .stats-grid {
