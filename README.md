@@ -60,6 +60,17 @@ Salve as imagens na pasta `assets/images` com estes nomes:
 
 Enquanto as imagens não existirem, a página mostra um placeholder visual elegante.
 
+## Como adicionar a foto profissional
+
+Salve a foto na pasta `assets` com o nome:
+
+```text
+profile.jpg
+```
+
+Use uma imagem vertical ou quadrada, com boa iluminação, fundo simples e resolução mínima de 800 × 800 pixels.
+Enquanto a foto não for adicionada, o site mostra o monograma `AN` no mesmo espaço.
+
 ## Como publicar no GitHub Pages
 
 1. Envie os arquivos para o repositório `ananunes1807-cell/ana-nunes-portfolio`.
